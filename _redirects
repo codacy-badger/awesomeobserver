@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://awesomeobserver.netlify.com/* https://awesomeobserver.me/:splat 301!
