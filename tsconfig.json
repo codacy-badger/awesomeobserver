@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "strict": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "lib": ["dom", "esnext", "es6", "es7"],
+    "noUnusedLocals": true
+  }
+}
