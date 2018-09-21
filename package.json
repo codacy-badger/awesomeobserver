@@ -1,24 +1,35 @@
 {
   "name": "awesomeobserver",
   "version": "1.0.0",
-  "description": "My site",
+  "description": "Site",
   "main": "index.js",
   "repository": "git@github.com:AwesomeObserver/awesomeobserver.git",
   "author": "Eugene",
   "license": "MIT",
-  "scripts": {
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --public-url ./"
-  },
   "private": true,
-  "devDependencies": {
-    "parcel-bundler": "^1.9.7",
-    "prettier": "^1.14.2",
-    "tslint": "^5.11.0",
-    "typescript": "^3.0.3"
+  "scripts": {
+    "dev": "rm -rf .next && next",
+    "build": "rm -rf .next && next build",
+    "export": "next build && next export",
+    "start": "next start"
   },
   "dependencies": {
-    "hyperapp": "^1.2.9",
-    "minireset.css": "^0.0.3"
+    "next": "^7.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "styled-components": "^3.4.6"
+  },
+  "devDependencies": {
+    "@types/next": "^6.1.7",
+    "@types/node": "^10.10.1",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "@zeit/next-typescript": "^1.1.1",
+    "babel-plugin-styled-components": "^1.7.1",
+    "prettier": "^1.14.2",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.0.3"
   }
 }
